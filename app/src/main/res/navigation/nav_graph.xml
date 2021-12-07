@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.notes.FirstFragment"
+        android:name="com.example.notes.view.ListOfNotes"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/list_of_notes">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.notes.SecondFragment"
+        android:name="com.example.notes.view.DetailsOfNotes"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/details_of_notes">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"

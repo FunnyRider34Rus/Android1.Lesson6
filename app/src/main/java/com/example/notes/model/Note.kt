@@ -1,14 +1,14 @@
 package com.example.notes.model
 
-import java.text.SimpleDateFormat
+import java.text.DateFormat.getDateTimeInstance
 import java.util.*
 
 
 class Note{
 
-    //
+    //регистрируем дату и время создания заметки
     init{
-        val currentDateFormat = SimpleDateFormat("dd/M/yy hh:mm")
+        val currentDateFormat = getDateTimeInstance()
         val dateOfCreate = currentDateFormat.format(Date())
     }
 

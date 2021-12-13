@@ -11,6 +11,11 @@ import com.example.notes.presenter.Logic
 
 import kotlinx.android.synthetic.main.activity_main.*
 
+// requireActivity() - return the FragmentActivity this fragment is currently associated with
+// requireContext() - return the Context this fragment is currently associated with
+// getActivity - return the FragmentActivity this fragment is currently associated with. May return null if the fragment is associated with a Context instead
+// getContext - return the Context this fragment is currently associated with
+
 class MainActivity : AppCompatActivity() {
 
     val listOfNotes = ListOfNotes()
